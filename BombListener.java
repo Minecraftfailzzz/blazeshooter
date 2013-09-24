@@ -23,7 +23,7 @@ public class BombListener implements Listener{
 	}
 	
 	@EventHandler
-	public void onProjectileHIt(ProjectileHitEvent e){
+	public void onProjectileHit(ProjectileHitEvent e){
 			Projectile p = e.getEntity();
 			if (!(p instanceof Snowball)) return;
 			Snowball s = (Snowball) p;
