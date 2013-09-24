@@ -1,3 +1,5 @@
+//please let me know if any bugs are found!
+
 package me.tomg.guns;
 
 import java.util.ArrayList;
