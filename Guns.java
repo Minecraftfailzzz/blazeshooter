@@ -11,7 +11,6 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -20,11 +19,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-public class Guns extends JavaPlugin implements Listener{
+public class Guns extends JavaPlugin{
 	
 	@Override
 	public void onEnable(){
-		Bukkit.getServer().getPluginManager().registerEvents(this, this);
 		PluginDescriptionFile pdfFile = this.getDescription();
 		Bukkit.getServer().getLogger().info(pdfFile.getName() + " Version: " + pdfFile.getVersion() + " by: " + pdfFile.getAuthors() + ChatColor.AQUA + " Has been enabled!");
 		Bukkit.getServer().getPluginManager().registerEvents(new BombListener(), this);
